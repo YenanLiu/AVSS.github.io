@@ -1,18 +1,306 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>BAVS: Bootstrapping Audio-Visual Segmentation by Integrating Foundation Knowledge</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <p>Welcome </p>
-    <ul>
-        <li>Welcome</li>
-        <li>Welcome</li>
-        <li>Welcome</li>
-    </ul>
-    <p>Welcome</p>
-</body>
-</html>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">BAVS: Bootstrapping Audio-Visual Segmentation by Integrating Foundation Knowledge</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block1">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=HmvE2WsAAAAJ" target="_blank">Chen Liu</a>,</span>
+              <span class="author-block2">
+              <a href="https://gogoduck912.github.io/" target="_blank">Peike Li</a>,</span>
+              <span class="author-block1">
+              <a href="https://scholar.google.com/citations?user=DkAZJX4AAAAJ&hl=zh-CN" target="_blank">Hu Zhang</a>,</span>
+			  <span class="author-block3">
+              <a href="https://scholar.google.com/citations?user=NYLsVscAAAAJ&hl=zh-CN" target="_blank">Lincheng Li</a>,</span>
+			  <span class="author-block1">
+              <a href="https://staff.itee.uq.edu.au/huang/" target="_blank">Zi Huang</a>,</span>  
+			  <span class="author-block4">
+              <a href="https://people.csiro.au/w/d/dadong-wang.aspx" target="_blank">Dadong Wang</a>,</span>
+			  <span class="author-block1">
+              <a href="https://sites.google.com/view/xinyus-homepage/Home" target="_blank">Xin Yu</a><sup>*</sup>,</span>  			  
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block1">The University of Queensland, </span>
+					<span class="author-block2">Matrix Verse, </span>
+					<span class="author-block3">Netease Fuxi AI Lab, </span>
+					<span class="author-block4">CSIRO DATA61</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                   <!--  <div class="publication-links"> -->
+                         <!-- Arxiv PDF link -->
+                      <!--  <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>-->
+
+                    <!-- Supplementary PDF link -->
+                     <!--  <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>-->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Coming soon)</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!--<video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <!--<source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>-->
+	  <img src="static/images/pipline.jpg" alt="MY ALT TEXT"/>
+      <div class="subtitle has-text-centered" style= "font-size:0.775em; text-align:center;"> <p><b> Overview of our BAVS framework.</b></p>
+	In the first stage, we first utilize an off-the-shelf large foundation multi-modal model to extract the visual semantics. 
+	Based on the visual semantics, we introduce a silent object-aware objective (SOAO) to our segmentation model and thus obtain the potential sounding instance labels and masks. 
+	Moreover, we employ a large pre-trained audio classification foundation model to collect semantic tags for each audio recording. 
+	In the second stage, we first introduce an audio-visual tree to fit sound semantics to their sounding sources. 
+	Then we present the audio-visual semantic integration strategy (AVIS) to establish a consistent audio-visual mapping between the segmented instances and the audio-semantic tags.
+</div>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+Given an audio-visual pair, audio-visual segmentation (AVS) aims to locate sounding sources by predicting pixel-wise maps.
+Previous methods assume that each sound component in an audio signal always has a visual counterpart in the image.
+However, this assumption overlooks that off-screen sounds and background noise often contaminate the audio recordings in real-world scenarios. 
+They impose significant challenges on building a consistent semantic mapping between audio and visual signals for AVS models and thus impede precise sound localization.
+In this work, we propose a two-stage bootstrapping audio-visual segmentation framework by incorporating multi-modal foundation knowledge.
+In a nutshell, our BAVS is designed to eliminate the interference of background noise or off-screen sounds in segmentation by establishing the audio-visual correspondences in an explicit manner. 
+In the first stage, we employ a segmentation model to localize potential sounding objects from visual data without being affected by contaminated audio signals. 
+In the meanwhile, we also utilize a foundation audio classification model to discern audio semantics. 
+Considering the audio tags provided by the audio foundation model are noisy, associating object masks with audio tags is not trivial.
+In the second stage, we develop an audio-visual semantic integration strategy (AVIS) to localize the authentic-sounding objects. 
+Here, we construct an audio-visual tree based on the hierarchical correspondence between sounds and object categories. Then, we examine the label concurrency between the localized objects and classified audio tags by tracing the audio-visual tree. 
+With AVIS, we can effectively segment real-sounding objects. 
+Extensive experiments demonstrate the superiority of our method on AVS datasets, particularly in scenarios involving background noise.          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Comparisons With the AVS Method</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+		    <video poster="" id="tree" autoplay controls muted loop width="70%">
+			<!-- Your video here -->
+           <source src="static/videos/Fig5.mp4" type="video/mp4">
+           </video>
+		   
+		  <div class="subtitle has-text-centered" style="margin-top:10px; text-align:center;">
+          <p  style="vertical-align:middle; font-size:0.6em;"><b>Qualitative comparisons with the state-of-the-art TPAVI on the single-sounding source and multi-sounding source cases.</b></p>
+		 </div>
+          
+          <!--<div class="publication-video">
+            <!-- Youtube embed code here -->
+            <!--<iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>-->
+        </div>
+      </div>
+	  
+	  <div class="columns is-centered has-text-centered" style="margin-top:40px">
+        <div class="column is-four-fifths">
+		    <video poster="" id="tree" autoplay controls muted loop width="70%">
+			<!-- Your video here -->
+           <source src="static/videos/Fig6.mp4" type="video/mp4">
+		   <h2 class="subtitle has-text-centered">
+          Second image description.
+           </h2>
+           </video>
+		  <div class="subtitle has-text-centered" style="margin-top:10px; text-align:center;">
+          <p  style="vertical-align:middle; font-size:0.6em;">
+		  <b> Visual results of adding white noise to original audio recordings. Red bounding boxes highlight the specific regions for comparison.  </br> When the input audio-visual pairs suffer from interference, our framework still segments sounding sources accurately.
+</b></p>
+		 </div>
+          <!--<div class="publication-video">
+            <!-- Youtube embed code here -->
+            <!--<iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>-->
+        </div>
+      </div>
+	  
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Comparisons With VSL Methods</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop width="70%" style="display: block; margin: 0 auto;">
+            <!-- Your video file here -->
+            <source src="static/videos/Fig7-2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop width="70%" style="display: block; margin: 0 auto;">
+            <!-- Your video file here -->
+            <source src="static/videos/Fig7-noise.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop width="70%" style="display: block; margin: 0 auto;">\
+            <!-- Your video file here -->
+            <source src="static/videos/Fig7-silent.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{liu2023bavs,
+  title={BAVS: Bootstrapping Audio-Visual Segmentation by Integrating Foundation Knowledge},
+  author={Liu, Chen and Li, Peike and Zhang, Hu and Li, Lincheng and Huang, Zi and Wang, Dadong and Yu, Xin},
+  journal={arXiv preprint arXiv:2308.10175},
+  year={2023}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p  style="vertical-align:middle; font-size:0.9em;">
+		  <b> If you are interested in our work, please feel free to contact us. The audio visual tree structure can be downloaded from this <a href="https://drive.google.com/drive/folders/1fV-P63iAg9BlkUB2_eTDrQT8JPZAj_My?usp=sharing">link</a>.</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
